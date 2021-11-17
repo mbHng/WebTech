@@ -8,7 +8,6 @@ class WebtechApplicationTests {
 
 	@Test
 	void contextLoads() {
-
 	}
 
 }
