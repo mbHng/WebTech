@@ -44,7 +44,7 @@ public class ToDoRestController {
     }
 
     @DeleteMapping(path = "/api/w1/todo/{id}")
-    public ResponseEntity<Void> deletePerson(@PathVariable Long id){
+    public ResponseEntity<Void> deleteTask(@PathVariable Long id){
         boolean successful = toDoService.deleteById(id);
         return successful? ResponseEntity.ok().build(): ResponseEntity.notFound().build();
 
